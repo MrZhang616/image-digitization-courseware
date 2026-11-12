@@ -1,0 +1,382 @@
+{
+  "schema": "ppt-master.fact-provenance.v1",
+  "topic": "图像数字化",
+  "facts": [
+    {
+      "fact_id": "F001",
+      "claim": "数字图像（digital image）由像素（picture element）构成，每个像素都是其强度或灰度值的有限、离散数值表示，取值来自以 x、y 为空间坐标的二维函数（该定义引自 Gonzalez, Digital Image Processing, Pearson, 2018）。",
+      "source_title": "Digital image — Wikipedia",
+      "source_url": "https://en.wikipedia.org/wiki/Digital_image",
+      "classification": "external",
+      "retrieved_at": "2026-11-12"
+    },
+    {
+      "fact_id": "F002",
+      "claim": "栅格图像包含固定数目的行与列；像素是图像中最小的独立元素，保存着表示某一位置颜色亮度的量化值，这些值通常以压缩形式传输或存储。",
+      "source_title": "Digital image — Wikipedia",
+      "source_url": "https://en.wikipedia.org/wiki/Digital_image",
+      "classification": "external",
+      "retrieved_at": "2026-11-12"
+    },
+    {
+      "fact_id": "F003",
+      "claim": "「数字图像」一词通常指栅格图像（raster/bitmapped images），与矢量图像相对。",
+      "source_title": "Digital image — Wikipedia",
+      "source_url": "https://en.wikipedia.org/wiki/Digital_image",
+      "classification": "external",
+      "retrieved_at": "2026-11-12"
+    },
+    {
+      "fact_id": "F004",
+      "claim": "Alvy Ray Smith 在 Microsoft Technical Memo 6《A Pixel Is Not a Little Square!》（正文日期 1995-07-17，含 1996-11-11 增补）中指出：像素是一个点采样（point sample），只存在于一个点上；彩色图像中一个像素可能实际包含三个采样，分别对应在采样点处贡献于图像的三个基色；该文将问题定位为正确地整合离散与连续。",
+      "source_title": "A Pixel Is Not a Little Square! (Microsoft Technical Memo 6, Alvy Ray Smith)",
+      "source_url": "http://alvyray.com/Memos/CG/Microsoft/6_pixel.pdf",
+      "classification": "external",
+      "retrieved_at": "2026-11-12"
+    },
+    {
+      "fact_id": "F005",
+      "claim": "PNG 是可扩展的文件格式，用于静态与动画栅格图像的无损（lossless）、可移植、良好压缩的存储；支持索引色、灰度与真彩色图像以及可选 alpha 通道，采样深度为 1 至 16 位；该规范为 W3C Recommendation（2025-06-24）。",
+      "source_title": "Portable Network Graphics (PNG) Specification (Third Edition)",
+      "source_url": "https://www.w3.org/TR/png/",
+      "classification": "external",
+      "retrieved_at": "2026-11-12"
+    },
+    {
+      "fact_id": "F006",
+      "claim": "ITU-T T.81（1992）/ ISO/IEC 10918-1（1993）把编码过程区分为有损（lossy）与无损（lossless）两类，其中「lossy」被定义为非无损的编码与解码过程的描述性用语。",
+      "source_title": "CCITT Rec. T.81 (1992 E) / ISO/IEC 10918-1:1993(E) — Digital compression and coding of continuous-tone still images",
+      "source_url": "https://www.w3.org/Graphics/JPEG/itu-t81.pdf",
+      "classification": "external",
+      "retrieved_at": "2026-11-12"
+    },
+    {
+      "fact_id": "F007",
+      "claim": "ITU-T T.81 术语表定义：sample 为「构成某一分量的二维数组中的一个元素」；horizontal sampling factor 为「某分量的水平数据单元数相对于其他分量水平数据单元数的相对数量」。",
+      "source_title": "CCITT Rec. T.81 (1992 E) / ISO/IEC 10918-1:1993(E)",
+      "source_url": "https://www.w3.org/Graphics/JPEG/itu-t81.pdf",
+      "classification": "external",
+      "retrieved_at": "2026-11-12"
+    },
+    {
+      "fact_id": "F008",
+      "claim": "ITU-T T.81 术语表定义：（均匀）量化（quantization）为「通过线性缩放 DCT 系数以实现压缩的过程」，反量化（dequantization）为其逆过程，即解码器据此恢复 DCT 系数的表示。",
+      "source_title": "CCITT Rec. T.81 (1992 E) / ISO/IEC 10918-1:1993(E)",
+      "source_url": "https://www.w3.org/Graphics/JPEG/itu-t81.pdf",
+      "classification": "external",
+      "retrieved_at": "2026-11-12"
+    },
+    {
+      "fact_id": "F009",
+      "claim": "W3C CSS Values and Units Level 4 的 <resolution> 类型定义三个单位标识符：dpi（Dots per inch，每英寸点数）、dpcm（Dots per centimeter，每厘米点数）、dppx（Dots per px unit）；<resolution> 单位表示图形表示中单个「点」的尺寸，即一个 CSS 英寸、厘米或 px 中能容纳多少个这样的点；各 <resolution> 单位彼此兼容，dppx 为规范单位。",
+      "source_title": "CSS Values and Units Level 4",
+      "source_url": "https://www.w3.org/TR/css-values-4/",
+      "classification": "external",
+      "retrieved_at": "2026-11-12"
+    },
+    {
+      "fact_id": "F010",
+      "claim": "PPI（pixels per inch）描述图像在物理表面或设备上的像素密度，与不论缩放比例的「分辨率」不同；像素本身没有固有尺寸或单位（像素实为一次采样），只有被打印、显示或扫描时才同时具有物理尺寸与像素密度；换算关系为 像素数 = 尺寸（英寸）× PPI；若所选像素密度低于设备能力会损失画质，若过高则像素被不必要地存储、浪费磁盘空间。",
+      "source_title": "Pixel density — Wikipedia",
+      "source_url": "https://en.wikipedia.org/wiki/Pixel_density",
+      "classification": "external",
+      "retrieved_at": "2026-11-12"
+    },
+    {
+      "fact_id": "F011",
+      "claim": "DPI（dots per inch）与 PPI 不同：像素是任意颜色的单个采样，而喷墨打印只能打印某个特定颜色「有或无」的一个点，因此打印机通过抖动（dithering）过程把像素转换为一系列点。",
+      "source_title": "Pixel density — Wikipedia",
+      "source_url": "https://en.wikipedia.org/wiki/Pixel_density",
+      "classification": "external",
+      "retrieved_at": "2026-11-12"
+    },
+    {
+      "fact_id": "F012",
+      "claim": "Microsoft 的 BITMAPINFOHEADER 结构中，biXPelsPerMeter 与 biYPelsPerMeter 分别指定位图目标设备的水平与垂直分辨率，单位为每米像素数。",
+      "source_title": "BITMAPINFOHEADER structure (wingdi.h) — Win32 apps",
+      "source_url": "https://learn.microsoft.com/en-us/windows/win32/api/wingdi/ns-wingdi-bitmapinfoheader",
+      "classification": "external",
+      "retrieved_at": "2026-11-12"
+    },
+    {
+      "fact_id": "F013",
+      "claim": "Microsoft 的 BITMAPCOREINFO 文档说明 bcBitCount 决定定义每个像素的位数以及位图中最大颜色数：取值 1 时位图为单色、调色板含 2 项、每个 bit 代表一个像素；取值 4 时最多 16 色、调色板最多 16 项、每像素为 4 位索引（一个字节代表两个像素，例如首字节 0x1F 表示两个像素）；取值 8 时最多 256 色、调色板最多 256 项、每个字节代表一个像素；取值 24 时最多 2^24 色、每像素为蓝绿红各 1 字节的三元组、调色板为空。",
+      "source_title": "BITMAPCOREINFO structure (wingdi.h) — Win32 apps",
+      "source_url": "https://learn.microsoft.com/en-us/windows/win32/api/wingdi/ns-wingdi-bitmapcoreinfo",
+      "classification": "external",
+      "retrieved_at": "2026-11-12"
+    },
+    {
+      "fact_id": "F014",
+      "claim": "Microsoft 文档指出：16 色调色板需要 4 位索引，因此把调色板颜色映射到像素颜色的数组同样由 4 位索引组成。",
+      "source_title": "About Bitmaps — Win32 apps",
+      "source_url": "https://learn.microsoft.com/en-us/windows/win32/gdi/about-bitmaps",
+      "classification": "external",
+      "retrieved_at": "2026-11-12"
+    },
+    {
+      "fact_id": "F015",
+      "claim": "PNG 规范中 PLTE 调色板块包含 1 至 256 个条目，每项为红、绿、蓝各 1 字节的三元组，条目数由块长度决定（块长不能被 3 整除即为错误）；该块必须出现在颜色类型 3，并可出现在颜色类型 2 与 6。",
+      "source_title": "Portable Network Graphics (PNG) Specification (Third Edition)",
+      "source_url": "https://www.w3.org/TR/png/",
+      "classification": "external",
+      "retrieved_at": "2026-11-12"
+    },
+    {
+      "fact_id": "F016",
+      "claim": "PNG 规范第 10.1 节：只定义一种 PNG 压缩方法 0，它是带滑动窗口（距离上限 32768 字节）的 deflate 压缩；deflate 派生自 LZ77；PNG 内的 deflate 压缩数据流以 zlib 格式存储。",
+      "source_title": "Portable Network Graphics (PNG) Specification (Third Edition)",
+      "source_url": "https://www.w3.org/TR/png/",
+      "classification": "external",
+      "retrieved_at": "2026-11-12"
+    },
+    {
+      "fact_id": "F017",
+      "claim": "PNG 规范术语表标注：deflate 是 LZ77 家族中的一种压缩方法（来源 RFC1951）；zlib 是一种 deflate 风格的压缩方法（来源 RFC1950）。",
+      "source_title": "Portable Network Graphics (PNG) Specification (Third Edition)",
+      "source_url": "https://www.w3.org/TR/png/",
+      "classification": "external",
+      "retrieved_at": "2026-11-12"
+    },
+    {
+      "fact_id": "F018",
+      "claim": "GIF89a 规范规定：像素索引序列使用带可变长度码的 LZW 算法编码；图像数据中 LZW Minimum Code Size 字节决定 LZW 码的初始位数。",
+      "source_title": "Graphics Interchange Format (GIF89a Specification)",
+      "source_url": "https://www.w3.org/Graphics/GIF/spec-gif89a.txt",
+      "classification": "external",
+      "retrieved_at": "2026-11-12"
+    },
+    {
+      "fact_id": "F019",
+      "claim": "ITU-T T.81 术语表定义了 Huffman 编码器/解码器与算术编码器/解码器；「字节填充（byte stuffing）」定义为由 Huffman 编码器或算术编码器在熵编码段中、在生成一个已编码的十六进制 X'FF' 字节之后插入一个零字节的过程，说明熵编码段是压缩码流的组成部分。",
+      "source_title": "CCITT Rec. T.81 (1992 E) / ISO/IEC 10918-1:1993(E)",
+      "source_url": "https://www.w3.org/Graphics/JPEG/itu-t81.pdf",
+      "classification": "external",
+      "retrieved_at": "2026-11-12"
+    },
+    {
+      "fact_id": "F020",
+      "claim": "ITU-T T.81 术语表定义 block 为「一个分量的 8×8 样本数组，或一个分量的 8×8 DCT 系数值数组」。",
+      "source_title": "CCITT Rec. T.81 (1992 E) / ISO/IEC 10918-1:1993(E)",
+      "source_url": "https://www.w3.org/Graphics/JPEG/itu-t81.pdf",
+      "classification": "external",
+      "retrieved_at": "2026-11-12"
+    },
+    {
+      "fact_id": "F021",
+      "claim": "Microsoft 的 BITMAPFILEHEADER 结构由 WORD bfType、DWORD bfSize、WORD bfReserved1、WORD bfReserved2、DWORD bfOffBits 五个字段构成（合计 14 字节）；bfType 必须为 0x4d42（ASCII 字符串 \"BM\"）；bfSize 为位图文件的字节数；bfOffBits 为从文件头起始处到位图数据的字节偏移。",
+      "source_title": "BITMAPFILEHEADER structure (wingdi.h) — Win32 apps",
+      "source_url": "https://learn.microsoft.com/en-us/windows/win32/api/wingdi/ns-wingdi-bitmapfileheader",
+      "classification": "external",
+      "retrieved_at": "2026-11-12"
+    },
+    {
+      "fact_id": "F022",
+      "claim": "Microsoft 的 BITMAPINFOHEADER 结构中，biWidth 与 biHeight 给出图像宽高；biBitCount 指定每像素位数（未压缩格式为平均每像素位数）；biSizeImage 指定图像的字节大小（未压缩 RGB 位图可置 0）；biClrUsed 指定调色板中实际使用的颜色索引数。",
+      "source_title": "BITMAPINFOHEADER structure (wingdi.h) — Win32 apps",
+      "source_url": "https://learn.microsoft.com/en-us/windows/win32/api/wingdi/ns-wingdi-bitmapinfoheader",
+      "classification": "external",
+      "retrieved_at": "2026-11-12"
+    },
+    {
+      "fact_id": "F023",
+      "claim": "Microsoft 对 DIB 的说明是：DIB 由描述位图尺寸与颜色的结构（BITMAPCOREINFO）与定义位图像素的字节数组两部分组成；数组中的位紧凑排列，但每条扫描线必须用零填充至 LONG 边界（LONG 为 4 字节）。",
+      "source_title": "BITMAPCOREINFO structure (wingdi.h) — Win32 apps",
+      "source_url": "https://learn.microsoft.com/en-us/windows/win32/api/wingdi/ns-wingdi-bitmapcoreinfo",
+      "classification": "external",
+      "retrieved_at": "2026-11-12"
+    },
+    {
+      "fact_id": "F024",
+      "claim": "Microsoft 文档说明：Windows 支持对以 8 位或 4 位每像素定义颜色的位图进行压缩；当位图信息头的 Compression 成员为 BI_RLE8 时使用行程编码（RLE）格式；压缩可减少位图所需的磁盘与内存存储。",
+      "source_title": "Bitmap Compression — Win32 apps",
+      "source_url": "https://learn.microsoft.com/en-us/windows/win32/gdi/bitmap-compression",
+      "classification": "external",
+      "retrieved_at": "2026-11-12"
+    },
+    {
+      "fact_id": "F025",
+      "claim": "PNG 规范摘要说明：PNG 是静态与动画栅格图像的无损、可移植、良好压缩的存储格式，是 GIF 的无专利费替代品并可替代 TIFF 的许多常见用途；为网络等在线浏览应用设计，可完全流式传输并支持渐进显示，并提供完整文件完整性校验与常见传输错误检测。",
+      "source_title": "Portable Network Graphics (PNG) Specification (Third Edition)",
+      "source_url": "https://www.w3.org/TR/png/",
+      "classification": "external",
+      "retrieved_at": "2026-11-12"
+    },
+    {
+      "fact_id": "F026",
+      "claim": "PNG 规范的参考文献把 GIF 规范记载为 CompuServe Incorporated 于 1990 年 7 月 31 日发布的 Graphics Interchange Format，网址为 W3C 归档的 spec-gif89a.txt。",
+      "source_title": "Portable Network Graphics (PNG) Specification (Third Edition)",
+      "source_url": "https://www.w3.org/TR/png/",
+      "classification": "external",
+      "retrieved_at": "2026-11-12"
+    },
+    {
+      "fact_id": "F027",
+      "claim": "GIF89a 规范由 CompuServe Incorporated 发布（页面载有该公司免责声明）；全局/局部颜色表是表示 RGB 三元组的字节序列，其字节数为 3 × 2^(Size of Color Table+1)；逻辑屏幕描述符中的 Color Resolution 为原始图像每个基色可用位数减 1，表示原始图像整个调色板的大小而非实际使用的颜色数。",
+      "source_title": "Graphics Interchange Format (GIF89a Specification)",
+      "source_url": "https://www.w3.org/Graphics/GIF/spec-gif89a.txt",
+      "classification": "external",
+      "retrieved_at": "2026-11-12"
+    },
+    {
+      "fact_id": "F028",
+      "claim": "Microsoft 支持文档说明：Windows 画图（Paint）可将作品另存为 PNG、JPEG、BMP 和 GIF 等多种格式，保存时由用户在对话框中选择格式；Paint 还可按像素或按百分比调整图像尺寸。",
+      "source_title": "Draw, Create, and Edit with Paint | Microsoft Windows",
+      "source_url": "https://support.microsoft.com/en-us/help/4027344/windows-10-get-microsoft-paint",
+      "classification": "external",
+      "retrieved_at": "2026-11-12"
+    },
+    {
+      "fact_id": "F029",
+      "claim": "W3C Scalable Vector Graphics (SVG) 2 规范定义：SVG 是基于 XML 的语言，用于描述二维矢量图形以及矢量/栅格混合图形；SVG 内容可按不同显示分辨率缩放，可独立查看、可与 HTML 内容混排或用 XML 命名空间嵌入其他 XML 语言；该文档为 W3C Candidate Recommendation Snapshot（2026-10-06）。",
+      "source_title": "Scalable Vector Graphics (SVG) 2",
+      "source_url": "https://www.w3.org/TR/SVG2/",
+      "classification": "external",
+      "retrieved_at": "2026-11-12"
+    },
+    {
+      "fact_id": "F030",
+      "claim": "中华人民共和国教育部在答复十三届全国人大四次会议第 1897 号建议时说明：2020 年修订印发的普通高中信息技术课程标准提出培养信息意识、计算思维、数字化学习与创新、信息社会责任等素养，设置「数据与计算」「信息系统与社会」必修模块和「数据与数据结构」「网络基础」等选择性必修模块，以及「移动应用设计」等选修模块；2020 年进一步修订课程方案，规定信息技术、通用技术必修 6 学分，约 108 课时。",
+      "source_title": "对十三届全国人大四次会议第1897号建议的答复 — 中华人民共和国教育部",
+      "source_url": "https://www.moe.gov.cn/jyb_xxgk/xxgk_jyta/jyta_jiaocaiju/202107/t20210729_547557.html",
+      "classification": "external",
+      "retrieved_at": "2026-11-12"
+    },
+    {
+      "fact_id": "F031",
+      "claim": "《普通高中信息技术课程标准（2017 年版 2020 年修订）》必修 1 内容要求 1.1 为「在具体感知数据与信息的基础上，描述数据与信息的特征，知道数据编码的基本方式」；对应学业要求为「学生能够描述数据与信息的特征，知道数据编码的基本方式；掌握数字化学习的方法，能够根据需要选用合适的数字化工具开展学习」。",
+      "source_title": "普通高中信息技术课程标准(2017年版2020年修订) 全文",
+      "source_url": "https://www.21cnjy.com/d-16746075.shtml",
+      "classification": "external",
+      "retrieved_at": "2026-11-12"
+    },
+    {
+      "fact_id": "F032",
+      "claim": "《普通高中信息技术课程标准（2017 年版 2020 年修订）》必修模块 1「数据与计算」包括「数据与信息」「数据处理与应用」「算法与程序实现」三部分内容。",
+      "source_title": "普通高中信息技术课程标准(2017年版2020年修订) 全文",
+      "source_url": "https://www.21cnjy.com/d-16746075.shtml",
+      "classification": "external",
+      "retrieved_at": "2026-11-12"
+    },
+    {
+      "fact_id": "F033",
+      "claim": "人民教育出版社专题页提供《普通高中课程方案及 20 科课程标准（2017 年版 2020 年修订）》各科课程标准全文 PDF，其中包含《普通高中信息技术课程标准（2017 年版 2020 年修订）》。",
+      "source_title": "普通高中课程方案及20科课程标准(2017年版2020年修订) — 人民教育出版社",
+      "source_url": "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/",
+      "classification": "external",
+      "retrieved_at": "2026-11-12"
+    },
+    {
+      "fact_id": "F034",
+      "claim": "人教/中图版普通高中教科书《信息技术 必修1 数据与计算》（主编：祝智庭、樊磊；责编：兰大鹏、慈黎利；ISBN 978-7-107-33845-8）第 1 章「认识数据与大数据」下设 1.2「数字化与编码」，含 1.2.1 数字化及其作用、1.2.2 二进制与数制转换、1.2.3 数据编码、1.2.4 数据压缩。",
+      "source_title": "教材教辅详情：信息技术 必修1 数据与计算 — 地图教学网",
+      "source_url": "https://www.ditu.cn/dtkczy/dtsxxkj/202303/20/1562676311596883738.html",
+      "classification": "external",
+      "retrieved_at": "2026-11-12"
+    },
+    {
+      "fact_id": "F035",
+      "claim": "人教/中图版《信息技术 必修1 数据与计算》目录中，第 3 章「数据处理与应用」下设 3.3「数据分析与可视化」，含 3.3.1 数据分析与 3.3.2 数据可视化。",
+      "source_title": "人教版高一信息技术必修1 数据与计算(人教中图版)电子课本目录",
+      "source_url": "http://dzkbw.com/books/rjb/xinxijishu/gzbx1/",
+      "classification": "external",
+      "retrieved_at": "2026-11-12"
+    },
+    {
+      "fact_id": "F036",
+      "claim": "Microsoft 支持文档说明 Windows 画图（Paint）的绘画工具包括铅笔、填充、取色器（color picker）、文字和放大镜（magnifier）等，并可裁剪、翻转、旋转、缩放图像。",
+      "source_title": "Draw, Create, and Edit with Paint | Microsoft Windows",
+      "source_url": "https://support.microsoft.com/en-us/help/4027344/windows-10-get-microsoft-paint",
+      "classification": "external",
+      "retrieved_at": "2026-11-12"
+    },
+    {
+      "fact_id": "F037",
+      "claim": "Microsoft 支持文档说明：在 Paint 中可通过「开始」选项卡的「调整大小」调整图像尺寸，并可按像素或按原始尺寸百分比指定新尺寸。",
+      "source_title": "Draw, Create, and Edit with Paint | Microsoft Windows",
+      "source_url": "https://support.microsoft.com/en-us/help/4027344/windows-10-get-microsoft-paint",
+      "classification": "external",
+      "retrieved_at": "2026-11-12"
+    },
+    {
+      "fact_id": "F038",
+      "claim": "微软帮助文档说明：Windows 照片查看器可用「放大镜」按钮放大和缩小图片，并可在「实际大小」与「按窗口大小显示」两种视图之间切换；还可旋转图片与放映幻灯片。",
+      "source_title": "如何使用 Windows 照片查看器 — 微软帮助",
+      "source_url": "http://hs.windows.microsoft.com/hhweb/content/m-zh-CN_en-US/p-6.2/id-89a00b32-096e-4b45-8138-5f8d76537daf/",
+      "classification": "external",
+      "retrieved_at": "2026-11-12"
+    },
+    {
+      "fact_id": "F039",
+      "claim": "Microsoft 支持文档说明：Windows 11 的「照片」应用可浏览、整理和编辑来自电脑、OneDrive 与 iCloud 的照片和视频，提供图库（Gallery）与编辑器。",
+      "source_title": "Browse and manage your photos on Windows",
+      "source_url": "https://support.microsoft.com/en-us/onedrive/windows/browse-your-photos-on-windows",
+      "classification": "external",
+      "retrieved_at": "2026-11-12"
+    },
+    {
+      "fact_id": "F040",
+      "claim": "Pillow 文档：Image.mode 为字符串，指定图像使用的像素格式，典型取值为 \"1\"、\"L\"、\"RGB\" 或 \"CMYK\"。",
+      "source_title": "Image — Pillow reference",
+      "source_url": "https://pillow.readthedocs.io/en/stable/reference/Image.html",
+      "classification": "external",
+      "retrieved_at": "2026-11-12"
+    },
+    {
+      "fact_id": "F041",
+      "claim": "Pillow 文档：Image.size 是以像素为单位的图像大小，以 (width, height) 二元组给出；另有 Image.width 与 Image.height 给出单值。",
+      "source_title": "Image — Pillow reference",
+      "source_url": "https://pillow.readthedocs.io/en/stable/reference/Image.html",
+      "classification": "external",
+      "retrieved_at": "2026-11-12"
+    },
+    {
+      "fact_id": "F042",
+      "claim": "Pillow 文档：Image.getpixel(xy) 返回给定位置（坐标以 (x, y) 给出）的像素值；若为多图层图像，该方法返回元组。",
+      "source_title": "Image — Pillow reference",
+      "source_url": "https://pillow.readthedocs.io/en/stable/reference/Image.html",
+      "classification": "external",
+      "retrieved_at": "2026-11-12"
+    },
+    {
+      "fact_id": "F043",
+      "claim": "Wikimedia Commons 许可政策：只接受明确自由许可的媒体，或至少在美国及来源国属于公有领域的媒体；不接受合理使用（fair use）；仅限非商业使用的许可（如 CC BY-NC-SA）也不接受。",
+      "source_title": "Commons:Licensing — Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/Commons:Licensing",
+      "classification": "external",
+      "retrieved_at": "2026-11-12"
+    },
+    {
+      "fact_id": "F044",
+      "claim": "Wikimedia Commons 许可政策要求：适用于某个媒体文件的许可必须在该文件的说明页上用版权标签清楚标示；Commons 会尽量在文件说明页标出限制，但确认使用是否符合许可是使用者的责任。",
+      "source_title": "Commons:Licensing — Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/Commons:Licensing",
+      "classification": "external",
+      "retrieved_at": "2026-11-12"
+    },
+    {
+      "fact_id": "F045",
+      "claim": "Creative Commons 官方页面说明：CC 共六种许可类型，按从最宽松到最严格排列为 CC BY、CC BY-SA、CC BY-NC、CC BY-ND、CC0、Public Domain（公有领域）；其中 CC BY 允许使用者在署名的前提下以任何媒介或格式分发、重混、改编并基于该素材创作。",
+      "source_title": "About CC Licenses — Creative Commons",
+      "source_url": "https://creativecommons.org/share-your-work/cclicenses/",
+      "classification": "external",
+      "retrieved_at": "2026-11-12"
+    },
+    {
+      "fact_id": "F046",
+      "claim": "NASA 图像与媒体使用指南说明：NASA 内容（图像、音频、视频及媒体文件）在美国通常不受版权保护，可用于教育或信息目的，包括照片集、教科书、公开展览、计算机图形模拟与网页；学校与教科书作者无需取得明确许可即可使用，但应将 NASA 标注为素材来源。",
+      "source_title": "Guidelines for using NASA Images and Media",
+      "source_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+      "classification": "external",
+      "retrieved_at": "2026-11-12"
+    },
+    {
+      "fact_id": "F047",
+      "claim": "NASA 图像与媒体使用指南说明：NASA 的徽标（Insignia）、文字标识（Logotype）、各类标识与相关形象不在公有领域，其使用受法律保护，须遵循媒体使用指南。",
+      "source_title": "Guidelines for using NASA Images and Media",
+      "source_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+      "classification": "external",
+      "retrieved_at": "2026-11-12"
+    }
+  ]
+}
